@@ -7,15 +7,17 @@ class Product
     public $producer;
     public $barcode;
     public $category;
-    private $price;
+    public $price;
 
-    function __construct($_name, $_producer, $_barcode, Category $_category)
+    function __construct($_name, $_producer, $_barcode, Category $_category, $_price)
     {
         $this->name = $_name;
         $this->producer = $_producer;
         $this->barcode = $_barcode;
         $this->category = $_category;
+        $this->price = $_price;
     }
+
 
 
 }
